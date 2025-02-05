@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trà Sữa Ngon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: pink;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-banner {
+            background-image: url('https://via.placeholder.com/1200x500?text=Trà+Sữa+Ngon');
+            background-size: cover;
+            height: 500px;
+            text-align: center;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-banner h1 {
+            font-size: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .menu-section, .promo-section, .about-section, .contact-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .promo-item {
+            background-color: pink;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .feedback-section {
+            background-color: #f1f1f1;
+            padding: 40px;
+        }
+
+        .feedback-item {
+            margin: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trà Sữa Ngon</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#menu">Các Món Trà Sữa</a></li>
+                <li><a href="#promo">Khuyến Mãi</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="#feedback">Phản Hồi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <div class="main-banner">
+        <h1>Trà Sữa Tươi Ngon Mỗi Ngày</h1>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Các Món Trà Sữa Nổi Bật</h2>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBAZv794Z3-T4A5eIbNUX4kUGSzpXjwgCvSw&s text=Trà+Sữa+Trân+Châu" alt="Trà Sữa Trân Châu">
+            <h3>Trà Sữa Trân Châu</h3>
+            <p>Trà sữa thơm ngon với trân châu mềm mại.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYT3xpFi_0M7RkNJuhwWbLKtuu-aq9MVwYxg&s text=Trà+Sữa+Matcha" alt="Trà Sữa Matcha">
+            <h3>Trà Sữa Matcha</h3>
+            <p>Trà matcha đậm đà kết hợp với sữa béo ngậy.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dLWWFSo9eVayq2goD7aI1GM2bFShPnVi_Q&s text=Trà+Sữa+Hồng+Trà" alt="Trà Sữa Hồng Trà">
+            <h3>Trà Sữa Hồng Trà</h3>
+            <p>Hương vị trà đen mạnh mẽ, kết hợp với sữa mát lạnh.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbEfTL1esfUs7CaDl5WICQvEw63sATZfGyg&s text= Sữa+Tươi+Trân+Châu+Đường+Đen" alt="Sữa Tươi Trân Châu Đường Đen">
+            <h3>Sữa Tươi Trân Châu Đường Đen</h3>
+            <p>Món đồ uống này là sự kết hợp hoàn hảo giữa sữa tươi không đường và trân châu đường đen.</p>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section id="promo" class="promo-section">
+        <h2>Chương Trình Khuyến Mãi</h2>
+        <div class="promo-item">
+            <h3>Mua 1 Tặng 1</h3>
+            <p>Chương trình ưu đãi đặc biệt cho các đơn hàng đầu tiên! Mua 1 ly trà sữa tặng 1 ly miễn phí.</p>
+        </div>
+        <div class="promo-item">
+            <h3>Giảm Giá 20% cho Đơn Hàng Trên 200k</h3>
+            <p>Đặt món trà sữa yêu thích của bạn và nhận ngay 20% giảm giá cho đơn hàng từ 200k.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Giới Thiệu</h2>
+        <p>Trà Sữa Ngon cam kết mang đến cho bạn những ly trà sữa tươi ngon, được chế biến từ nguyên liệu tươi mới và chất lượng cao. Chúng tôi không ngừng sáng tạo để đem lại cho bạn những trải nghiệm mới mẻ và thú vị trong mỗi ly trà sữa.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Liên Hệ</h2>
+        <p>Email: wyd.athu@gmail.com</p>
+        <p>Địa chỉ: 14, Đường số 13, Phường Long Thạnh Mỹ, Quận 9, TP.HCM</p>
+        <p>Số điện thoại: 0876790796</p>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-section">
+        <h2>Phản Hồi Của Khách Hàng</h2>
+        <div class="feedback-item">
+            <p>"Trà sữa ở đây rất ngon, trân châu mềm và thơm. Mình sẽ quay lại!" - Minh T.</p>
+        </div>
+        <div class="feedback-item">
+            <p>"Dịch vụ giao hàng nhanh chóng, ly trà sữa luôn nóng hổi, vị rất vừa miệng." - Lan A.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Trà Sữa Ngon - Liên hệ: wyd.athu@gmail.com</p>
+        <p><a href="#home">Trang Chủ</a> | <a href="#menu">Menu</a> | <a href="#promo">Khuyến Mãi</a> | <a href="#about">Giới Thiệu</a> | <a href="#contact">Liên Hệ</a></p>
+    </footer>
+
+</body>
+</html>
