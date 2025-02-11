@@ -3,206 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trà Sữa Ngon</title>
+    <title>MAYONNAISE</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            text-align: center;
         }
-
         header {
-            background-color: pink;
-            color: white;
+            background: #ffc1c1;
             padding: 20px;
-            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
+        nav {
+            background: #333;
+            padding: 10px;
         }
-
-        nav ul li {
-            display: inline;
+        nav a {
+            color: pink;
             margin: 10px;
-        }
-
-        nav ul li a {
-            color: black;
             text-decoration: none;
             font-size: 18px;
         }
-
-        .main-banner {
-            background-image: url('https://via.placeholder.com/1200x500?text=Trà+Sữa+Ngon');
-            background-size: cover;
-            height: 500px;
-            text-align: center;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        section {
+            padding: 20px;
         }
-
-        .main-banner h1 {
-            font-size: 50px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
         }
-
-        .menu-section, .promo-section, .about-section, .contact-section {
-            padding: 40px;
-            text-align: center;
+        table, th, td {
+            border: 1px solid black;
         }
-
-        .menu-item {
-            display: inline-block;
-            width: 200px;
-            margin: 20px;
-            background-color: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        th, td {
+            padding: 10px;
         }
-
-        .menu-item img {
-            width: 100%;
+        img {
+            width: 150px;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
         }
-
-        .menu-item h3 {
-            margin-top: 10px;
-            font-size: 20px;
-        }
-
-        .promo-item {
-            background-color: pink;
-            color: black;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-        }
-
-        .feedback-section {
-            background-color: #f1f1f1;
-            padding: 40px;
-        }
-
-        .feedback-item {
-            margin: 20px;
-            font-style: italic;
+        footer {
+            background: #333;
+            color: pink;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Trà Sữa Ngon</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#menu">Các Món Trà Sữa</a></li>
-                <li><a href="#promo">Khuyến Mãi</a></li>
-                <li><a href="#about">Giới Thiệu</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
-                <li><a href="#feedback">Phản Hồi</a></li>
-            </ul>
-        </nav>
+        MAYONNAISE
     </header>
 
-    <!-- Main Banner -->
-    <div class="main-banner">
-        <h1>Trà Sữa Tươi Ngon Mỗi Ngày</h1>
-    </div>
+    <nav>
+        <a href="#home">Trang Chủ</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Đánh Giá</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <h2>Các Món Trà Sữa Nổi Bật</h2>
-        <div class="menu-item" onclick="showPrice('price1')">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBAZv794Z3-T4A5eIbNUX4kUGSzpXjwgCvSw&s text=Trà+Sữa+Trân+Châu" alt="Trà Sữa Trân Châu">
-            <h3>Trà Sữa Trân Châu</h3>
-            <p>Trà sữa thơm ngon với trân châu mềm mại.</p>
-             <div id="price1" class="price-display">Giá: 40.000 VND</div>
-        </div>
-        <div class="menu-item" onclick="showPrice('price2')">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYT3xpFi_0M7RkNJuhwWbLKtuu-aq9MVwYxg&s text=Trà+Sữa+Matcha" alt="Trà Sữa Matcha">
-            <h3>Trà Sữa Matcha</h3>
-            <p>Trà matcha đậm đà kết hợp với sữa béo ngậy.</p>
-            <div id="price2" class="price-display">Giá: 45.000 VND</div>
-        </div>
-        <div class="menu-item" onclick="showPrice('price3')">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dLWWFSo9eVayq2goD7aI1GM2bFShPnVi_Q&s text=Trà+Sữa+Hồng+Trà" alt="Trà Sữa Hồng Trà">
-            <h3>Trà Sữa Hồng Trà</h3>
-            <p>Hương vị trà đen mạnh mẽ, kết hợp với sữa mát lạnh.</p>
-            <div id="price3" class="price-display">Giá: 40.000 VND</div>
-        </div>
-        <div class="menu-item" onclick="showPrice('price4')">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbEfTL1esfUs7CaDl5WICQvEw63sATZfGyg&s text= Sữa+Tươi+Trân+Châu+Đường+Đen" alt="Sữa Tươi Trân Châu Đường Đen">
-            <h3>Sữa Tươi Trân Châu Đường Đen</h3>
-            <p>Món đồ uống này là sự kết hợp hoàn hảo giữa sữa tươi không đường và trân châu đường đen.</p>
-            <div id="price4" class="price-display">Giá: 45.000 VND</div>
-        </div>
+    <section id="home">
+        <h2>Chào mừng đến với Quán Trà Sữa MAYONNAISE</h2>
+        <p>Quán chúng tôi tự hào mang đến những ly trà sữa thơm ngon, được pha chế từ nguyên liệu chất lượng, giá cả phải chăng cùng với đội ngũ nhân viên tận tâm, luôn sẵn sàng phục vụ và mang đến cho khách hàng trải nghiệm tuyệt vời nhất. </p>
+        <img src="https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1573201702274-9HOOU2RAN9U7JOGATZD2/chup-anh-mon-an-boba-tea-3.jpg"alt="Hình ảnh trà sữa">
     </section>
 
-    <!-- Promo Section -->
-    <section id="promo" class="promo-section">
-        <h2>Chương Trình Khuyến Mãi</h2>
-        <div class="promo-item">
-            <h3>Mua 1 Tặng 1</h3>
-            <p>Chương trình ưu đãi đặc biệt cho các đơn hàng đầu tiên! Mua 1 ly trà sữa tặng 1 ly miễn phí.</p>
-        </div>
-        <div class="promo-item">
-            <h3>Giảm Giá 20% cho Đơn Hàng Trên 200k</h3>
-            <p>Đặt món trà sữa yêu thích của bạn và nhận ngay 20% giảm giá cho đơn hàng từ 200k.</p>
-        </div>
+    <section id="menu">
+        <h2>Menu</h2>
+        <table>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên món</th>
+                <th>Giá tiền</th>
+            </tr>
+            <tr>
+                <td><img src=" https://pos.nvncdn.com/3a420a-79556/art/artCT/20210220_6elhBSjXEU7sCGAcZzfo9lfZ.png" alt="Trà sữa truyền thống"></td>
+                <td>Trà Sữa Truyền Thống</td>
+                <td>35.000đ</td>
+            </tr>
+            <tr>
+                <td><img src="https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/kinh-nghiem-meo-hay/n%E1%BA%A5u%20%C4%83n/tra-sua-matcha-tran-chau-den.jpg" alt="Trà sữa matcha"></td>
+                <td>Trà Sữa Matcha</td>
+                <td>40.000đ</td>
+            </tr>
+            <tr>
+                <td><img src="https://melaniemakes.com/images/2015/06/iced-caramel-mocha-latte-6-2.jpg" alt="Trà sữa socola"></td>
+                <td>Trà Sữa Socola</td>
+                <td>38.000đ</td>
+            </tr>
+            <tr>
+                <td><img src="https://phela.vn/wp-content/uploads/2021/07/14369.jpg" alt="Trà sữa ô long"></td>
+                <td>Trà Sữa Ô Long</td>
+                <td>42.000đ</td>
+            </tr>
+<tr>
+                <td><img src="https://afamilycdn.com/2019/7/12/tra-dao-1562895904215828320093.jpg" alt="Trà Đào"></td>
+                <td>Trà Đào</td>
+                <td>32.000đ</td>
+            </tr>
+<tr>
+                <td><img src="https://caphe4.flatsome.vn/wp-content/uploads/2023/11/tra-xoai-nha-dam-kieu-mach.png" alt="Trà Xoài"></td>
+                <td>Trà Xoài</td>
+                <td>33.000đ</td>
+            </tr>
+
+<tr>
+                <td><img src="https://kenh14cdn.com/2019/11/5/t-15729718041531163741916.jpg" alt="Sữa tươi trân châu đường đen"></td>
+                <td>Sữa tươi trân châu đường đen</td>
+                <td>38.000đ</td>
+            </tr>
+
+<tr>
+                <td><img src="https://file.hstatic.net/1000075078/file/3_bf9dd70c875442b19b6febfcf4f06796_1024x1024.jpg" alt="Matcha Latte"></td>
+                <td>Matcha Latte</td>
+                <td>45.000đ</td>
+            </tr>
+<tr>
+                <td><img src="https://raumaluck.vn/wp-content/uploads/2024/09/Tran-Chau-Den.png"" alt="Trân châu đường đen"></td>
+                <td>Trân châu đường đen</td>
+                <td>5.000đ</td>
+            </tr>
+<tr>
+                <td><img src="https://raumasigon.com/wp-content/uploads/2022/08/tranchautuyettrang.png" alt="Trân châu trắng"></td>
+                <td>Trân châu trắng</td>
+                <td>5.000đ</td>
+            </tr>
+<tr>
+                <td><img src="https://superfoods.vn/wp-content/uploads/2023/08/banh-flan.jpg" alt="Bánh Flan"></td>
+                <td>Bánh Flan</td>
+                <td>5.000đ</td>
+            </tr>
+        </table>
+    </section>
+<img src="https://hopdungthucan.com/wp-content/uploads/2022/05/hinh-anh-tra-sua-dep-tuyet-800x800.jpg" alt="Hình ảnh trà sữa">
+<img src="https://www.bartender.edu.vn/wp-content/uploads/2022/04/tra-sua-nuong-hap-dan.jpg" alt="Hình ảnh trà sữa">
+    <section id="reviews">
+        <h2>Đánh Giá Của Khách Hàng</h2>
+        <ul>
+            <li>"Trà sữa rất ngon, topping nhiều mà giá hợp lý!" - Linh Lê</li>
+            <li>"Mình thích trà sữa ô long ở đây, thơm và béo vừa phải." - Phương Nhi  </li>
+            <li>"Nhân viên thân thiện, quán sạch sẽ, đáng để quay lại!" - Lan Phương</li>
+        </ul>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>Giới Thiệu</h2>
-        <p>Trà Sữa Ngon cam kết mang đến cho bạn những ly trà sữa tươi ngon, được chế biến từ nguyên liệu tươi mới và chất lượng cao. Chúng tôi không ngừng sáng tạo để đem lại cho bạn những trải nghiệm mới mẻ và thú vị trong mỗi ly trà sữa.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact">
         <h2>Liên Hệ</h2>
-        <p>Email: wyd.athu@gmail.com</p>
-        <p>Địa chỉ: 14, Đường số 13, Phường Long Thạnh Mỹ, Quận 9, TP.HCM</p>
-        <p>Số điện thoại: 0876790796</p>
+        <p>Địa chỉ: 14, Đường số 13, Phường Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+        <p>Điện thoại: 0876790796</p>
+        <p>Email: mayonnaise@gmail.com</p>
     </section>
-
-    <!-- Feedback Section -->
-    <section id="feedback" class="feedback-section">
-        <h2>Phản Hồi Của Khách Hàng</h2>
-        <div class="feedback-item">
-            <p>"Trà sữa ở đây rất ngon, trân châu mềm và thơm. Mình sẽ quay lại!" - Minh T.</p>
-        </div>
-        <div class="feedback-item">
-            <p>"Dịch vụ giao hàng nhanh chóng, ly trà sữa luôn nóng hổi, vị rất vừa miệng." - Lan A.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Trà Sữa Ngon - Liên hệ: wyd.athu@gmail.com</p>
-        <p><a href="#home">Trang Chủ</a> | <a href="#menu">Menu</a> | <a href="#promo">Khuyến Mãi</a> | <a href="#about">Giới Thiệu</a> | <a href="#contact">Liên Hệ</a></p>
+    <footer>
+        &copy; 2025 Quán Trà Sữa Ngon. Tất cả các quyền được bảo lưu.
     </footer>
-
 </body>
 </html>
